@@ -1,7 +1,7 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     background-color: lightgray;
-    font-size: 1.1em;
+    font-size: 1.3em;
     color: #fff;
 }
 
@@ -69,7 +69,6 @@ footer {
 
 .title {
     color: #fff;
-    font-family: 'Big Shoulders Text', cursive;
     font-size: 1em;
     text-transform: uppercase;
 }
@@ -122,3 +121,10 @@ footer {
     color: #293947;
 }
 
+.edit {
+    text-align: center;
+}
+
+.edit button {
+    border-radius: 4px;;
+}

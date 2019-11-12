@@ -4,6 +4,11 @@ function getImageFromFlickr() {
     let tags = document.getElementById('tags').value;
     const apiUrl = 'https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=e193d62234d9b4e3ebb94074f4e6c5f6&tags=' + tags + '&format=json&nojsoncallback=1';
 
+    // validation
+    if (tags === "") {
+        alert('Please enter an image tag')
+    }
+
     fetch(apiUrl)
         // returning the data in json format
         .then(data => data.json()) // man kan lägga in catch eller if-statements här för fånga ev error
@@ -14,10 +19,10 @@ function getImageFromFlickr() {
         const photos = data.photos.photo;
 
         // creating array of object
-        let photosArray = Object.values(photos);
+        // let photosArray = Object.values(photos);
 
 
-        for (let i = 0; i < photosArray.length; i++) {
+        for (let i = 0; i < photos.length; i++) {
 
             const flickrphoto = 'https://farm' + data.photos.photo[i]['farm'] + '.staticflickr.com/' + data.photos.photo[i]['server'] + '/' + data.photos.photo[i]['id'] + '_' + data.photos.photo[i]['secret'] + '.jpg'
             const html = `
@@ -28,9 +33,8 @@ function getImageFromFlickr() {
             displayImagesDiv.innerHTML = html
         }
     }
-
 }
-
+// document.getElementsByClassName('edit').style.display = 'none';
 document.getElementById('button').onclick = function () {
     getImageFromFlickr();
 }
