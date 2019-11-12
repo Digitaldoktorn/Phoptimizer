@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text|Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eb502d0c1d.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Phoptimizer</title>
+</head>
+
+<body>
+    <div class="container px-5">
+        <header>
+            <h1><i class="fas fa-camera fa-0.5x"></i> Phoptimizer </h1>
+        </header>
+
+        <main>
+            <form>
+                <div class="form-group">
+
+                    Please enter image tag<br>
+                    <input class="form-control" id="tags" type="text"
+                        placeholder="Example: 'people', 'flowers', 'skyline' and so on" autofocus><br>
+                    Images per page<br>
+                    <select class="form-control" name="" id="service">
+                        <option disabled selected value="0">-- Choose a number --</option>
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select><br>
+                    How do you want to edit the images?<br>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" checked> Crop&nbsp;
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio"> Contrast&nbsp;
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio"> Resize&nbsp;
+                    </label>
+
+                    <input id="button" class="btn btn primary" type="button" value="Get image">
+
+                    </p>
+                </div>
+            </form>
+            <div class="displayImages"></div>
+            <button id="button2" value="Reset" onClick="window.location.reload();">Reset</button>
+        </main>
+        <footer>
+            <p><small>&copy; 2019 Digitaldoktorn</small></p>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+<!--KEY: e193d62234d9b4e3ebb94074f4e6c5f6 -->
+<!--SECRET: 01a1a94df17a2750 -->
+
+</html>

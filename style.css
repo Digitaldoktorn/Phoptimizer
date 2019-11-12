@@ -1,0 +1,124 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: lightgray;
+    font-size: 1.1em;
+    color: #fff;
+}
+
+header {
+    background-color: #293947;
+    margin-top: 1em;;
+
+}
+
+main {
+    background-color: #344e67;
+    padding: 2em;
+}
+
+img {
+    border:6px solid #fff;
+    margin-bottom: 1em;
+ }
+.container {
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 800px;
+    min-height: 800px;
+    background-color: #141c22;
+    border-top-left-radius: 0.6em;
+    border-top-right-radius: 0.6em;
+    border-bottom-left-radius: 0.6em;
+    border-bottom-right-radius: 0.6em;
+    padding: 2em;    
+    padding-bottom: 3em;
+}
+
+h1 {
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 46pt;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #fff;
+    padding: 0.5em;
+    padding-top: 0.8em;
+}
+h1::after {
+    content: 'Edit images from Flickr';
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.4em;
+    letter-spacing: 0.25em;
+
+}
+h3 {
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+small {
+    font-size: 0.7em;
+}
+footer {
+    padding: 1em;
+    background-color: #293947;
+    text-align: center;
+    margin-top: 0.4em;
+}
+
+.title {
+    color: #fff;
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+#button {
+    background-color: #ccf1ff;
+    color: #293947;
+    padding: 0.2em;
+    width: 200px;
+    height: 50px;
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 28px;
+    display: block;
+    margin: 30px auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition-duration: 0.2s;
+}
+
+#button2 {
+    background-color: #ccf1ff;
+    color: #293947;
+    width: 85px;
+    height: 35px;
+    padding-bottom: 1em;
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 22px;
+    display: block;
+    margin: 10px auto;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    transition-duration: 0.2s;
+}
+
+#button:hover {
+    background-color: #116fc5;
+    color: #ccf1ff;
+}
+
+#button2:hover {
+    background-color: #116fc5;
+    color: #ccf1ff;
+}
+
+.displayImages {
+    text-align: center;
+    color: #293947;
+}
+
