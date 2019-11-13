@@ -1,3 +1,10 @@
+/*
+tag selectors
+class selectors
+id selectors
+
+*/
+
 body {
     font-family: 'Open Sans Condensed', sans-serif;
     background-color: lightgray;
@@ -14,28 +21,15 @@ header {
 main {
     background-color: #344e67;
     padding: 2em;
+    text-align: center;
 }
 
 img {
     border:6px solid #fff;
     margin-bottom: 1em;
  }
-.container {
-    margin: 0 auto;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    width: 800px;
-    min-height: 800px;
-    background-color: #141c22;
-    border-top-left-radius: 0.6em;
-    border-top-right-radius: 0.6em;
-    border-bottom-left-radius: 0.6em;
-    border-bottom-right-radius: 0.6em;
-    padding: 2em;    
-    padding-bottom: 3em;
-}
 
-h1 {
+ h1 {
     font-family: 'Big Shoulders Text', cursive;
     font-size: 46pt;
     letter-spacing: 0.05em;
@@ -67,11 +61,52 @@ footer {
     margin-top: 0.4em;
 }
 
+.container {
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 800px;
+    min-height: 800px;
+    background-color: #141c22;
+    border-top-left-radius: 0.6em;
+    border-top-right-radius: 0.6em;
+    border-bottom-left-radius: 0.6em;
+    border-bottom-right-radius: 0.6em;
+    padding: 2em;    
+    padding-bottom: 3em;
+}
+
 .title {
     color: #fff;
     font-size: 1em;
     text-transform: uppercase;
 }
+
+.displayImages {
+    text-align: center;
+    color: #293947;
+}
+
+.edit {
+    text-align: center;
+}
+
+.edit button {
+    border-radius: 4px;;
+}
+
+.brightness {
+    filter: brightness(1.2);
+}
+
+.contrast {
+    filter: contrast(1.2);
+}
+
+.saturate{
+    filter: saturate(2);
+}
+
 #button {
     background-color: #ccf1ff;
     color: #293947;
@@ -92,7 +127,7 @@ footer {
 #button2 {
     background-color: #ccf1ff;
     color: #293947;
-    width: 85px;
+    width: 250px;
     height: 35px;
     padding-bottom: 1em;
     font-family: 'Big Shoulders Text', cursive;
@@ -116,19 +151,3 @@ footer {
     color: #ccf1ff;
 }
 
-.displayImages {
-    text-align: center;
-    color: #293947;
-}
-
-.edit {
-    text-align: center;
-}
-
-.edit button {
-    border-radius: 4px;;
-}
-
-.brighten {
-    width: 300px;
-}

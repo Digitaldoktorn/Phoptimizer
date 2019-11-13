@@ -19,16 +19,31 @@
         <header>
             <h1><i class="fas fa-camera fa-0.5x"></i> Phoptimizer </h1>
         </header>
-
         <main>
+            <div class="test-image">
+                <h3>Edit image</h3>
+                <img id="testimage" src="./img/testimage.jpg" width="500" alt="Mansion in Halland, Sweden">
+                <form>
+                    <div class="form-group">
+                        <div class="edit">
+                            <button id="brightness" type="submit">Brightness</button>
+                            <button id="contrast" type="submit">Contrast</button>
+                            <button id="saturate" type="submit">Saturation</button>
+                            <button id="button2" value="Reset"
+                                onClick="window.location.reload();">Reset</button><br><br>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
             <form>
                 <div class="form-group">
-
+                    <h3>Get image from Flickr</h3>
                     <p>Please enter image tag</p>
                     <input class="form-control" id="tags" type="text"
-                        placeholder="Examples: 'london', 'flowers', 'skyline' and so on" autofocus><br>
+                        placeholder="Examples: 'london', 'flowers', 'skyline' and so on"><br>
 
-                    <!-- Outcommented code us for future version-->
+                    <!-- Outcommented code: use for future version-->
                     <!-- Images per page<br>
                     <select class="form-control" name="" id="perpage">
                         <option disabled selected value="0">-- Choose a number --</option>
@@ -38,27 +53,10 @@
                         <option value="50">50</option>
                         <option value="100">100</option>
                     </select><br> -->
-
-
                     <input id="button" class="btn btn primary" type="button" value="Get image">
-
-                    </p>
                 </div>
             </form>
             <div class="displayImages"></div>
-            <form>
-                <div class="form-group">
-                    <div class="edit"> How do you want to edit the image?<br>
-                        <button id="brightness" type="submit">Brightness</button>
-                        <button id="contrast" type="submit">Contrast</button>
-                        <button id="saturation" type="submit">Saturation</button>
-                    </div>
-                </div>
-            </form>
-
-
-            <button id="button2" value="Reset" onClick="window.location.reload();">Reset</button>
-            <img id="testimage" src="./img/pina-messina-Sw2XNTgA-wc-unsplash.jpg" width="500px">
         </main>
         <footer>
             <p><small>&copy; 2019 Digitaldoktorn</small></p>
