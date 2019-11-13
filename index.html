@@ -26,7 +26,7 @@
 
                     <p>Please enter image tag</p>
                     <input class="form-control" id="tags" type="text"
-                        placeholder="Example: 'london', 'flowers', 'skyline' and so on" autofocus><br>
+                        placeholder="Examples: 'london', 'flowers', 'skyline' and so on" autofocus><br>
 
                     <!-- Outcommented code us for future version-->
                     <!-- Images per page<br>
@@ -49,22 +49,16 @@
             <form>
                 <div class="form-group">
                     <div class="edit"> How do you want to edit the image?<br>
-                        <label class="radio-inline">
-                            <input type="radio" name="optradio"> Crop&nbsp;
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="optradio"> Contrast&nbsp;
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="optradio"> Resize&nbsp;
-                        </label>
-                        <button type="submit">Submit</button>
+                        <button id="brightness" type="submit">Brightness</button>
+                        <button id="contrast" type="submit">Contrast</button>
+                        <button id="saturation" type="submit">Saturation</button>
                     </div>
                 </div>
             </form>
 
 
             <button id="button2" value="Reset" onClick="window.location.reload();">Reset</button>
+            <img id="testimage" src="./img/pina-messina-Sw2XNTgA-wc-unsplash.jpg" width="500px">
         </main>
         <footer>
             <p><small>&copy; 2019 Digitaldoktorn</small></p>
