@@ -29,6 +29,7 @@
                             <button id="brightness" type="submit">Brightness</button>
                             <button id="contrast" type="submit">Contrast</button>
                             <button id="saturate" type="submit">Saturation</button>
+                            <!-- Click "Reset" button to be able to apply other image editing. Reloads the page -->
                             <button id="button2" value="Reset"
                                 onClick="window.location.reload();">Reset</button><br><br>
                         </div>
@@ -42,17 +43,6 @@
                     <p>Please enter image tag</p>
                     <input class="form-control" id="tags" type="text"
                         placeholder="Examples: 'london', 'flowers', 'skyline' and so on"><br>
-
-                    <!-- Outcommented code: use for future version-->
-                    <!-- Images per page<br>
-                    <select class="form-control" name="" id="perpage">
-                        <option disabled selected value="0">-- Choose a number --</option>
-                        <option value="5">5</option>
-                        <option value="10">10</option>
-                        <option value="25">25</option>
-                        <option value="50">50</option>
-                        <option value="100">100</option>
-                    </select><br> -->
                     <input id="button" class="btn btn primary" type="button" value="Get image">
                 </div>
             </form>
@@ -64,8 +54,5 @@
     </div>
     <script src="main.js"></script>
 </body>
-
-<!--KEY: e193d62234d9b4e3ebb94074f4e6c5f6 -->
-<!--SECRET: 01a1a94df17a2750 -->
 
 </html>

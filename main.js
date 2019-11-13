@@ -29,7 +29,7 @@ function getImageFromFlickr() {
             // Concatenating an Url in which I can loop through the data necessary to display an image from the Flickr API
             const flickrphoto = 'https://farm' + photosArray[i]['farm'] + '.staticflickr.com/' + photosArray[i]['server'] + '/' + photosArray[i]['id'] + '_' + photosArray[i]['secret'] + '.jpg'
 
-            // Creating a const that I can render to the DOM
+            // Creating an element that I can render to the DOM
             const html = `
         <h5 class="title">Title: ${photosArray[i]['title']}</h5>
         
@@ -40,6 +40,7 @@ function getImageFromFlickr() {
     }
 }
 
+// Clicking the "Get image" button fetches the API data
 document.getElementById('button').onclick = function () {
     getImageFromFlickr();
 }
